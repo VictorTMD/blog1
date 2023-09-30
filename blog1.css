@@ -1,58 +1,44 @@
-;html{
-    font-family: 'Montserrat', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: url(hexagonal.jpg);
+body {
+  font-family: "Inclusive Sans", sans-serif;
+  min-height: 100%;
 }
-header{
-    background-image: url(tridi.jpg);
-    color: rgb(90, 255, 1);
-    padding: 3rem 2rem;
-    background-size: 100%;
+/* encabezao */
+.cabeza {
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Satisfy", cursive;
+  max-height: 130px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
-header h1{
-    font-size: 4rem;
-    text-align: center;
-}
-.container{
-    width: 400px;
-    margin: 0 auto;
-}
-section article{
-    transition: box-shadow 0.3s ease-in;
-    background-color: #48459b76;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 0.25rem 0;
-    cursor: pointer;
-    
-}
-section article:hover {
-    box-shadow: 0 0.1rem 0.4rem rgb(3, 247, 7)
 
+.fotoswa {
+  width: 130px;
+  height: 100%;
+  border-radius: 80px;
+  padding: 10%;
+  animation: slid 4s infinite;
+  box-shadow: 2px 2px 2px rgb(238, 174, 202);
 }
-section article h2, section article p{
-    padding: 1rem;
-    color: rgb(0, 255, 42);
+@keyframes slid {
+  from {
+    transform: scale(10%);
+  }
 }
-footer{
-    background-color: gray;
-    padding: 3rem;
-    color: aqua;
-}
-footer section{
-    float: right;
-}
-footer p{
-    margin: 0;
-}
-footer a{
-    transition: color 0.3s ease ;
-    color: white;
-    text-decoration: none;
-}
-footer a:hover{
-    color: rgb(230, 144, 39);
 
+.fotoswa:hover {
+  box-shadow: 2px 2px 2px black;
 
+  /* barra de navegacion */
 }
